@@ -33,7 +33,7 @@
         <li class="main__li ul__li">Сила</li>
         <li class="main__li ul__li">Мужественность</li>
       </ul>
-      <a class="main__btn btn" href="#">
+      <a class="main__btn btn" href="#form">
         <svg class="svg-btn" viewBox="0 0 230 216" xmlns="http://www.w3.org/2000/svg">
           <path class="svg-btn__path"
             d="M209.284 111.435C209.646 114.678 209.617 117.452 209.197 119.758C208.034 126.137 205.209 128.918 200.72 128.1C198.353 127.668 196.755 126.281 195.927 123.939C194.388 125.85 192.465 126.595 190.16 126.175C185.241 125.279 183.362 121.641 184.525 115.262C184.945 112.956 185.897 110.35 187.379 107.443L191.068 108.116C189.432 110.994 188.404 113.586 187.984 115.892C187.339 119.427 188.324 121.433 190.937 121.91C193.243 122.33 194.608 121.372 195.034 119.035L196.413 111.472L199.871 112.102L198.506 119.596C198.071 121.979 199.069 123.391 201.497 123.834C203.68 124.232 205.094 122.663 205.738 119.127C206.158 116.822 206.11 114.034 205.595 110.763L209.284 111.435Z" />
@@ -120,7 +120,7 @@
       <li class="ul__li">Сила</li>
       <li class="ul__li">Мужественность</li>
     </ul>
-    <a class="btn" href="#">
+    <a class="btn" href="#form">
       <svg class="svg-btn" viewBox="0 0 230 216" xmlns="http://www.w3.org/2000/svg">
         <path class="svg-btn__path"
           d="M209.284 111.435C209.646 114.678 209.617 117.452 209.197 119.758C208.034 126.137 205.209 128.918 200.72 128.1C198.353 127.668 196.755 126.281 195.927 123.939C194.388 125.85 192.465 126.595 190.16 126.175C185.241 125.279 183.362 121.641 184.525 115.262C184.945 112.956 185.897 110.35 187.379 107.443L191.068 108.116C189.432 110.994 188.404 113.586 187.984 115.892C187.339 119.427 188.324 121.433 190.937 121.91C193.243 122.33 194.608 121.372 195.034 119.035L196.413 111.472L199.871 112.102L198.506 119.596C198.071 121.979 199.069 123.391 201.497 123.834C203.68 124.232 205.094 122.663 205.738 119.127C206.158 116.822 206.11 114.034 205.595 110.763L209.284 111.435Z" />
@@ -162,6 +162,33 @@
     </a>
 
   </section>
+
+  <sectin class="section form" id="form">
+    <img src="img/form-product.png" alt="фото продукта" class="form__img">
+    <form class="form__form" action="">
+      <div class="form__timer">
+        30:00
+      </div>
+      <div class="form__price">
+        <p class="price-new">4000$</p>
+        <p class="price-old">5000$</p>
+      </div>
+      <div class="form__data">
+
+        <div class="input">
+          <input type="text" autocomplete="off" class="form__input" placeholder="Имя" id="name">
+          <label for="name" class="input__label input__label-name"></label>
+        </div>
+        <div class="input">
+          <input type="number" autocomplete="off" class="form__input-number form__input" placeholder="79999999999"
+            id="tel">
+          <label for="tel" class="input__label input__label-tel"></label>
+        </div>
+        <button class="form__btn">-заказать-</button>
+      </div>
+    </form>
+  </sectin>
+
 
 </body>
 

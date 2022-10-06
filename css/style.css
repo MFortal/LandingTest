@@ -107,6 +107,7 @@ body {
   -webkit-animation: rotation 30s infinite linear;
   -moz-animation: rotation 30s infinite linear;
   -o-animation: rotation 30s infinite linear;
+  cursor: pointer;
 }
 
 .main__btn {
@@ -149,6 +150,258 @@ body {
 
 .svg-btn:hover .svg-btn__path {
   fill: red;
+}
+
+/* Стили отзывов */
+.review,
+.form {
+  background: #d31027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ea384d, #d31027); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ea384d,
+    #d31027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.review {
+  height: 100%;
+  padding-bottom: 0;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+}
+
+.slide__img {
+  width: 30%;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.text__name {
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: 0.07em;
+}
+
+.text__desc {
+  width: 602px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.review__nav {
+  width: 190px;
+  height: 101px;
+}
+
+.review__nav-path {
+  fill: black;
+}
+
+.review__nav_prev {
+  transform: rotate(180deg);
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.review__nav:hover .review__nav-path {
+  fill: white;
+}
+
+.review__nav:hover {
+  transform: rotate(-45deg);
+  transition: 3s;
+}
+
+.review__nav_prev:hover {
+  transform: rotate(225deg);
+  transition: 3s;
+}
+
+.slider.owl-carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Стили промо*/
+
+.promo {
+  padding-top: 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  background: linear-gradient(144.7deg, #000000 2.72%, rgba(0, 0, 0, 0.5) 84.96%);
+}
+
+.promo__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.promo__info {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.promo__ul {
+  flex-direction: row;
+  gap: 40px;
+}
+
+/* Стили формы */
+.form {
+  display: flex;
+}
+
+.form__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 70px;
+  gap: 40px;
+
+  background: #ffffff;
+  border-radius: 50px;
+}
+
+.form__img {
+  width: 55%;
+  transform: translateX(-70px);
+}
+
+.form__price {
+  display: flex;
+  gap: 85px;
+  align-items: center;
+}
+
+.price-new,
+.form__timer {
+  font-family: "Sansation";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 78px;
+
+  color: #000000;
+}
+
+.price-old {
+  font-family: "Sansation";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 54px;
+  text-decoration-line: line-through;
+
+  color: #ac2a2a;
+}
+
+input {
+  all: unset;
+}
+
+.form__input {
+  background: #ffffff;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.45);
+  border-radius: 13px;
+  color: black;
+
+  padding-left: 30px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-right: 80px;
+  box-sizing: border-box;
+  width: 470px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.form__input::placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+.form__btn {
+  background: transparent;
+  border: none;
+
+  font-family: "Sansation";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 54px;
+
+  letter-spacing: 0.08em;
+
+  color: #ff0000;
+}
+
+.form__data {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form__btn:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.price-new {
+  animation: scale 5s infinite linear;
+  -webkit-animation: scale 5s infinite linear;
+  -moz-animation: scale 5s infinite linear;
+  -o-animation: scale 5s infinite linear;
+}
+
+.input__label {
+  position: relative;
+}
+
+.input__label-name:before {
+  content: "Иван";
+  position: absolute;
+  left: -70px;
+  top: -20px;
+  font-size: 23px;
+  opacity: 0;
+}
+
+.input__label-tel:before {
+  content: "79994567289";
+  position: absolute;
+  left: -147px;
+  top: -20px;
+  font-size: 23px;
+  opacity: 0;
+}
+
+.form__input:hover + .input__label:before,
+.form__input:focus + .input__label:before {
+  color: rgba(0, 0, 0, 0.45);
+  opacity: 1;
 }
 
 /* Анимация кнопки */
@@ -209,107 +462,84 @@ body {
   }
 }
 
-/* Стили отзывов */
-.review {
-  background-color: red;
-  height: 100%;
-  padding-bottom: 0;
+/* Анимация цены*/
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
 }
-
-.slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 30px;
+@-moz-keyframes scale {
+  0% {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
 }
-
-.slide__img {
-  width: 350px;
+@-o-keyframes scale {
+  0% {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
 }
-
-.text {
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 36px;
-}
-
-.text__name {
-  font-size: 48px;
-  line-height: 54px;
-  letter-spacing: 0.07em;
-}
-
-.text__desc {
-  width: 602px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.review__nav {
-  width: 190px;
-  height: 101px;
-  transition: 3s;
-}
-
-.review__nav-path {
-  fill: black;
-}
-
-.review__nav_prev {
-  transform: rotate(180deg);
-}
-
-.owl-nav {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.review__nav:hover .review__nav-path {
-  fill: white;
-}
-
-.review__nav:hover {
-  transform: rotate(-45deg);
-}
-
-.review__nav_prev:hover {
-  transform: rotate(225deg);
-}
-
-.slider.owl-carousel {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-/* Стили промо*/
-
-.promo {
-  padding-top: 25px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-
-  background: linear-gradient(144.7deg, #000000 2.72%, rgba(0, 0, 0, 0.5) 84.96%);
-}
-
-.promo__text {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.promo__info {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-.promo__ul {
-  flex-direction: row;
-  gap: 40px;
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
 }
