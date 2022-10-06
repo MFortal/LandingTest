@@ -272,7 +272,7 @@ body {
   transform: rotate(225deg);
 }
 
-.slider {
+.slider.owl-carousel {
   display: flex;
   flex-direction: column;
   gap: 50px;
