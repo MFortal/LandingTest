@@ -1,7 +1,24 @@
-body {
+@font-face {
   font-family: "Jacques Francois";
   font-style: normal;
   font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Jacques Francois"), url("/fonts/JacquesFrancois-Regular.ttf") format("ttf"),
+    url("/fonts/JacquesFrancois-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sansation";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Sansation"), url("/fonts/Sansation-Regular.ttf") format("ttf"),
+    url("/fonts/Sansation-Regular.woff") format("woff");
+}
+
+body {
+  font-family: "Sansation", sans-serif;
+
   font-size: 36px;
   line-height: 47px;
 
@@ -73,9 +90,7 @@ body {
 }
 
 .title {
-  font-family: "Jacques Francois";
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Jacques Francois", sans-serif;
   font-size: 96px;
   line-height: 127px;
 
@@ -130,7 +145,7 @@ body {
 
 .main__ul {
   position: absolute;
-  right: 30%;
+  right: 28%;
   bottom: 30%;
 }
 
@@ -236,7 +251,7 @@ body {
 .slider.owl-carousel {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 /* Стили промо*/
@@ -297,9 +312,6 @@ body {
 
 .price-new,
 .form__timer {
-  font-family: "Sansation";
-  font-style: normal;
-  font-weight: 400;
   font-size: 70px;
   line-height: 78px;
 
@@ -307,9 +319,6 @@ body {
 }
 
 .price-old {
-  font-family: "Sansation";
-  font-style: normal;
-  font-weight: 400;
   font-size: 48px;
   line-height: 54px;
   text-decoration-line: line-through;
@@ -347,9 +356,6 @@ input[type="number"]::-webkit-inner-spin-button {
   background: transparent;
   border: none;
 
-  font-family: "Sansation";
-  font-style: normal;
-  font-weight: 400;
   font-size: 48px;
   line-height: 54px;
 
@@ -392,7 +398,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .input__label-tel:before {
   content: "79994567289";
   position: absolute;
-  left: -147px;
+  left: -164px;
   top: -20px;
   font-size: 23px;
   opacity: 0;
