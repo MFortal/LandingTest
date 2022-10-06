@@ -5,14 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>LevelUp</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 
 <body>
-  <section class="main">
-
+  <section class="section main">
     <div class="main__video">
       <video class="video" loop="loop" autoplay="" muted="" poster="">
         <source src="video/video.mp4" type="video/mp4" />
@@ -71,8 +75,35 @@
 
       </a>
     </div>
+  </section>
 
+  <section class="section review">
+    <div class="slider owl-carousel" id="slider">
+      <!--Слайд 1-->
+      <div class="slide">
+        <img src="img/img1.png" alt="фото мужчины" class="slide__img">
+        <p class="text text__name">Иван</p>
+        <p class="text text__desc">Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось иметь
+          ласковых хозяев и тёплый кров.</p>
+      </div>
+      <!--Слайд 2-->
+      <div class="slide">
+        <img src="img/img2.png" alt="фото мужчины" class="slide__img">
+        <p class="text text__name">Игорь</p>
+        <p class="text text__desc">Один из проверенных способов это сделать — помочь приюту для животных Домашний. У
+          этих ребят живёт более 1500 четвероногих, и благодаря их труду ежегодно сотни питомцев находят свой новый дом.
+        </p>
+      </div>
+      <!--Слайд 3-->
+      <div class="slide">
+        <img src="img/img1.png" alt="фото мужчины" class="slide__img">
+        <p class="text text__name">Майкл</p>
+        <p class="text text__desc">Мы любим животных и стараемся поддерживать тех из них, кому не
+          посчастливилось иметь
+          ласковых хозяев и тёплый кров.</p>
+      </div>
     </div>
+  </section>
 
 </body>
 
