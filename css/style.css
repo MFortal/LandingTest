@@ -286,6 +286,7 @@ body {
 /* Стили формы */
 .form {
   display: flex;
+  justify-content: space-between;
 }
 
 .form__form {
@@ -408,6 +409,51 @@ input[type="number"]::-webkit-inner-spin-button {
 .form__input:focus + .input__label:before {
   color: rgba(0, 0, 0, 0.45);
   opacity: 1;
+}
+
+/* Стили блока Состав*/
+.composition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.elem__text {
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.07em;
+
+  white-space: nowrap;
+}
+
+.elem__img {
+  width: 200px;
+  height: 200px;
+  background: url("../img/composition-elem.jpg");
+  background-size: cover;
+  box-shadow: 0px 20px 50px #000000;
+  border-radius: 50%;
+}
+
+.composition__elem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.composition__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.composition__elems {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 /* Анимация кнопки */
