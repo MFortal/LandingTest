@@ -228,17 +228,6 @@ body {
   z-index: 5;
 }
 
-.review .ball {
-  z-index: 3;
-  background-color: var(--color-white);
-
-  top: 5%;
-  right: 34%;
-  width: 200px;
-  height: 200px;
-  filter: blur(150px);
-}
-
 /* Стили промо*/
 .promo {
   padding-top: 25px;
@@ -439,50 +428,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 40%;
 }
 
-/* Шары */
-.ball {
-  position: absolute;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-.ball-red {
-  border: 3px solid var(--color-red);
-  filter: blur(2px);
-
-  width: 800px;
-  height: 800px;
-
-  top: 200vh;
-  left: -5%;
-}
-
-.ball-white {
-  border: 5px solid var(--color-white);
-  filter: blur(5px);
-
-  width: 800px;
-  height: 800px;
-
-  top: 330vh;
-  right: -10%;
-}
-
-.ball-footer {
-  background-color: var(--color-white);
-  filter: blur(400px);
-  bottom: 0;
-  top: auto;
-  z-index: 3;
-  left: 0;
-}
-
-.footer {
-  position: relative;
-}
-
 .footer__content {
-  z-index: 5;
   display: flex;
   justify-content: space-around;
   width: 100%;

@@ -35,12 +35,6 @@
     width: 50%;
     top: 8%;
   }
-
-  .ball-white,
-  .ball-red {
-    width: 600px;
-    height: 600px;
-  }
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
@@ -110,12 +104,6 @@
     width: 50%;
     top: 8%;
   }
-
-  .ball-white,
-  .ball-red {
-    width: 600px;
-    height: 600px;
-  }
 }
 
 @media (max-width: 768px) and (min-width: 531px) {
@@ -132,8 +120,12 @@
     right: 6%;
   }
 
+  .ul {
+    gap: 10px;
+  }
+
   .svg-btn {
-    width: 160px;
+    width: 150px;
     height: 180px;
   }
 
@@ -157,6 +149,7 @@
 
   .form__form {
     gap: 24px;
+    padding: 4% 5%;
   }
 
   .form__data {
@@ -164,11 +157,19 @@
   }
 
   .promo {
-    gap: 20px;
+    gap: 10px;
+  }
+
+  .form__img {
+    height: 40%;
+  }
+
+  .promo__img {
+    width: 40%;
   }
 
   .section {
-    min-height: 300px;
+    min-height: 345px;
   }
 
   .composition__elems {
@@ -190,6 +191,21 @@
   html {
     font-size: 10px;
     line-height: 12px;
+  }
+
+  .composition__img {
+    width: 30%;
+  }
+  .main__btn {
+    right: 6%;
+  }
+
+  .ul {
+    gap: 3px;
+  }
+
+  .text__desc {
+    max-width: 50%;
   }
 
   .svg-btn {
@@ -217,6 +233,7 @@
 
   .form__form {
     gap: 14px;
+    padding: 4% 5%;
   }
 
   .form__data {
@@ -225,6 +242,14 @@
 
   .promo {
     gap: 10px;
+  }
+
+  .form__img {
+    height: 40%;
+  }
+
+  .promo__img {
+    width: 40%;
   }
 
   .section {
