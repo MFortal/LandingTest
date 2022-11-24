@@ -1,0 +1,265 @@
+@media (max-width: 1315px) and (min-width: 1025px) {
+  html {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .svg-btn {
+    width: 180px;
+    height: 200px;
+  }
+
+  .main__img {
+    top: 10%;
+  }
+
+  .elem__img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .review__nav {
+    width: 170px;
+    height: 80px;
+  }
+
+  .input__label-tel:before {
+    left: -140px;
+  }
+
+  .form__price {
+    gap: 70px;
+  }
+
+  .main__img {
+    width: 50%;
+    top: 8%;
+  }
+
+  .ball-white,
+  .ball-red {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  html {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .section {
+    padding: 5% 7% 3%;
+  }
+
+  .svg-btn {
+    width: 180px;
+    height: 200px;
+  }
+
+  .main__img {
+    top: 10%;
+  }
+
+  .main__btn {
+    right: 6%;
+  }
+
+  .elem__img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .review__nav {
+    width: 150px;
+    height: 60px;
+  }
+
+  .form__form {
+    padding: 4% 5%;
+  }
+
+  .form__img {
+    height: 40%;
+  }
+
+  .form__price {
+    gap: 65px;
+  }
+
+  .promo {
+    gap: 20px;
+  }
+
+  .section {
+    min-height: 500px;
+  }
+
+  .input__label-name:before {
+    left: -56px;
+    top: -10px;
+  }
+
+  .input__label-tel:before {
+    left: -113px;
+    top: -10px;
+  }
+
+  .main__img {
+    width: 50%;
+    top: 8%;
+  }
+
+  .ball-white,
+  .ball-red {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 531px) {
+  html {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .composition__img {
+    width: 30%;
+  }
+
+  .main__btn {
+    right: 6%;
+  }
+
+  .svg-btn {
+    width: 160px;
+    height: 180px;
+  }
+
+  .main__img {
+    top: 10%;
+  }
+
+  .elem__img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .review__nav {
+    width: 120px;
+    height: 50px;
+  }
+
+  .form__price {
+    gap: 20px;
+  }
+
+  .form__form {
+    gap: 24px;
+  }
+
+  .form__data {
+    gap: 18px;
+  }
+
+  .promo {
+    gap: 20px;
+  }
+
+  .section {
+    min-height: 300px;
+  }
+
+  .composition__elems {
+    gap: 35px;
+  }
+
+  .input__label-name:before {
+    left: -38px;
+    top: -6px;
+  }
+
+  .input__label-tel:before {
+    left: -75px;
+    top: -6px;
+  }
+}
+
+@media (max-width: 530px) {
+  html {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .svg-btn {
+    width: 60px;
+    height: 60px;
+  }
+
+  .main__img {
+    top: 10%;
+  }
+
+  .elem__img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .review__nav {
+    width: 80px;
+    height: 40px;
+  }
+
+  .form__price {
+    gap: 10px;
+  }
+
+  .form__form {
+    gap: 14px;
+  }
+
+  .form__data {
+    gap: 8px;
+  }
+
+  .promo {
+    gap: 10px;
+  }
+
+  .section {
+    min-height: 250px;
+  }
+
+  .main__ul {
+    bottom: 30%;
+    top: 53%;
+  }
+
+  .composition__elems {
+    gap: 20px;
+  }
+
+  .composition {
+    gap: 20px;
+  }
+
+  .form__input {
+    border-radius: 8px;
+  }
+
+  .slide,
+  .slider.owl-carousel {
+    gap: 10px;
+  }
+
+  .input__label-name:before {
+    left: -23px;
+    top: -4px;
+  }
+
+  .input__label-tel:before {
+    left: -47px;
+    top: -4px;
+  }
+}

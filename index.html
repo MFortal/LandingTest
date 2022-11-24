@@ -5,17 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>LevelUp</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/script.js"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script defer src="js/owl.carousel.min.js"></script>
+  <script defer src="js/script.js"></script>
 </head>
 
 <body>
+  <div class="ball ball-red"></div>
+  <div class="ball ball-white"></div>
+
   <section class="section main">
     <div class="main__video">
       <video class="video" loop="loop" autoplay="" muted="" poster="">
@@ -25,7 +25,7 @@
 
     <div class="main__content">
       <h1 class="title main__title">LevelUp</h1>
-      <img class="main__img" src="img/main-foto.png" alt="product" />
+      <img class="main__img" src="img/main-foto.webp" alt="product" />
       <ul class="main__ul ul">
         <li class="main__li ul__li ul__li">Энергичность</li>
         <li class="main__li ul__li">Сила</li>
@@ -90,7 +90,7 @@
           <p class="elem__text">чудо-чудесное</p>
         </div>
       </div>
-      <img src="img/composition-product.png" alt="продукт" class="composition__img">
+      <img src="img/composition-product.webp" alt="продукт" class="composition__img">
       <div class="composition__elems">
         <div class="composition__elem">
           <div class="elem__img"></div>
@@ -147,37 +147,35 @@
       </svg>
     </a>
   </section>
-  <section class="section review">
+  <!-- <section class="section review">
     <div class="slider owl-carousel" id="slider">
-      <!--Слайд 1-->
-      <div class="slide">
-        <img src="img/review-foto1.png" alt="фото мужчины" class="slide__img">
+           <div class="slide">
+        <img src="img/review-foto1.webp" alt="фото мужчины" class="slide__img">
         <p class="text text__name">Иван</p>
         <p class="text text__desc">Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось иметь
           ласковых хозяев и тёплый кров.</p>
       </div>
-      <!--Слайд 2-->
       <div class="slide">
-        <img src="img/review-foto2.png" alt="фото мужчины" class="slide__img">
+        <img src="img/review-foto2.webp" alt="фото мужчины" class="slide__img">
         <p class="text text__name">Игорь</p>
         <p class="text text__desc">Один из проверенных способов это сделать — помочь приюту для животных Домашний. У
           этих ребят живёт более 1500 четвероногих, и благодаря их труду ежегодно сотни питомцев находят свой новый дом.
         </p>
       </div>
-      <!--Слайд 3-->
       <div class="slide">
-        <img src="img/review-foto1.png" alt="фото мужчины" class="slide__img">
+        <img src="img/review-foto1.webp" alt="фото мужчины" class="slide__img">
         <p class="text text__name">Майкл</p>
         <p class="text text__desc">Мы любим животных и стараемся поддерживать тех из них, кому не
           посчастливилось иметь
           ласковых хозяев и тёплый кров.</p>
       </div>
     </div>
-  </section>
+    <div class="ball ball-white"></div>
+  </section> -->
 
   <section class="section promo">
     <div class="promo__info">
-      <img src="img/promo-doctor.png" alt="доктор с лекарством" class="promo__img">
+      <img src="img/promo-doctor.webp" alt="доктор с лекарством" class="promo__img">
       <div class="promo__text">
         <p class="text">В рамках спецификации современных стандартов, базовые сценарии поведения пользователей и по сей
           день остаются уделом либералов, которые жаждут быть рассмотрены исключительно в разрезе маркетинговых и
@@ -233,31 +231,35 @@
 
   </section>
 
-  <sectin class="section form" id="form">
-    <img src="img/form-product.png" alt="фото продукта" class="form__img">
-    <form class="form__form" action="">
-      <div class="form__timer">
-        30:00
-      </div>
-      <div class="form__price">
-        <p class="price-new">4000$</p>
-        <p class="price-old">5000$</p>
-      </div>
-      <div class="form__data">
+  <section class="section footer form" id="form">
+    <div class="footer__content">
+      <img src="img/form-product.webp" alt="фото продукта" class="form__img">
+      <form class="form__form" action="">
+        <div class="form__timer">
+          30:00
+        </div>
+        <div class="form__price">
+          <p class="price-new">4000$</p>
+          <p class="price-old">5000$</p>
+        </div>
+        <div class="form__data">
 
-        <div class="input">
-          <input type="text" autocomplete="off" class="form__input" placeholder="Имя" id="name">
-          <label for="name" class="input__label input__label-name"></label>
+          <div class="input">
+            <input type="text" autocomplete="off" class="form__input" placeholder="Имя" id="name">
+            <label for="name" class="input__label input__label-name"></label>
+          </div>
+          <div class="input">
+            <input type="number" autocomplete="off" class="form__input-number form__input" placeholder="79999999999"
+              id="tel">
+            <label for="tel" class="input__label input__label-tel"></label>
+          </div>
+          <button class="form__btn">-заказать-</button>
         </div>
-        <div class="input">
-          <input type="number" autocomplete="off" class="form__input-number form__input" placeholder="79999999999"
-            id="tel">
-          <label for="tel" class="input__label input__label-tel"></label>
-        </div>
-        <button class="form__btn">-заказать-</button>
-      </div>
-    </form>
-  </sectin>
+      </form>
+    </div>
+
+    <div class="ball ball-white ball-footer"></div>
+  </section>
 
 
 </body>

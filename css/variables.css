@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Jacques Francois";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Jacques Francois"),
+    url("/fonts/JacquesFrancois-Regular.woff") format("woff"),
+    url("/fonts/JacquesFrancois-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Sansation";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Sansation"), url("/fonts/Sansation-Regular.woff") format("woff"),
+    url("/fonts/Sansation-Regular.woff2") format("woff2");
+}
+
+:root {
+  --color-white: white;
+  --color-text: #333333;
+
+  --color-light-text: #e4e5ea;
+  --color-black: #0e1014;
+  --color-red: #fd1d1d;
+  --color-dark-red: #961a1a;
+
+  --color-red-grad1: #e52d27;
+  --color-red-grad2: #b31217;
+
+  --color-black-opacity: rgba(0, 0, 0, 0.45);
+}
